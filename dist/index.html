@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title> Hegazi Wallpaper </title>
+    </head>
+    <body>
+   
+<!--        header -->
+        <header id="header-home">
+        <div class="container">
+            <button class="ham btn-no-show"></button> 
+            <nav id="main-nav" class="navbar">
+            <img id="logo" src="img/logo.png">
+            
+            
+                <ul>
+                <li><a  class="menuLink" href="#">Home</a></li>
+                <li><a  class="menuLink" href="#download">Download</a></li>
+                <li><a  class="menuLink" href="about.html">Contact Us</a></li>
+                <li><a  class="menuLink" href="privacy.html">Privacy</a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <h1 id="header-content">Best <span>Wallpapers</span> App Ever</h1>
+            <p class="lead"> More than 100 Wallpapers/week</p>
+            <a class="btn-light" href="#download">Download</a>
+          </div>
+        </div>
+      </header>
+        
+<!--        section why we are different -->
+        
+        <section id="why-we-are">
+        <div class="container">
+        <h2 class="section-title">Why Choose our App</h2>
+            <div class="bottom-line"></div>
+            <p class="lead"> we are different than others in many aspects </p>
+            
+            <div class="specials">
+          <div data-aos="flip-up">
+            <i class="fas fa-star fa-2x"></i>
+            <h3>High Resolution Pictures</h3>
+            <p>
+              we provide high Resolution pictures for your needs .
+            </p>
+          </div>
+            <div data-aos="zoom-in-up">
+            <i class="fas fa-download fa-2x"></i>
+            <h3>Easy To Download</h3>
+            <p>
+             easy to download with a single click !   
+                </p>
+          </div>
+                
+                <div data-aos="flip-down">
+            <i class="fas fa-mobile-alt fa-2x"></i>
+            <h3>Works With Every Device</h3>
+            <p>
+             Compatible with all Devices .  
+                </p>
+            </div>
+            </div>   
+           </div>
+        </section>
+        
+        
+<!--        section mobile things -->
+        
+        <section id="download">
+        <div class="container">
+        <h2 class="section-title">Download </h2>
+            <div class="bottom-line"></div>
+            <div class="download-btn">
+            <p class="lead"> our app is available on Android and Soon will be on IOS and you can use the website to view all the wallpapers . </p>
+            <a data-aos="zoom-out-right" class="btn-light " href="#">Andriod </a>
+            <a data-aos="zoom-out-up" class="btn-light " href="#">IOS</a>
+            <a data-aos="zoom-out-left" class="btn-light " href="#">Desktop</a>
+            </div>
+            </div>
+            </section>
+            
+            
+            <!--        footer -->
+            
+           
+        
+         <footer id="footer-fix">
+        <div class="container">
+            <div class="row">
+            <ul class="footer-nav">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="#">IOS APP</a></li>
+                <li><a href="#">ANDROID APP</a></li>
+                </ul>
+            </div>
+            <div class="row">
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f fa-2"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter fa-2"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-2"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin fa-2"></i></a></li>
+                </ul>
+            </div>
+            </div>
+        <div class="row">
+            <p>
+            Copyright &copy; 2020 By BLKTK. All Rights Reserved.
+            </p>
+            </div>
+        </footer>
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+    </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="js/animate.js" ></script>
+        <script>
+    <script>
+     $(function() {
+          AOS.init();
+     });
+</script>
+    
+    <script>
+    var navbar = document.querySelector(".navbar")
+var ham = document.querySelector(".ham")
+
+// toggles hamburger menu in and out when clicking on the hamburger
+function toggleHamburger(){
+  navbar.classList.toggle("showNav")
+  ham.classList.toggle("showClose")
+}
+
+ham.addEventListener("click", toggleHamburger)
+
+// toggle when clicking on links
+
+// METHOD 1
+var menuLinks = document.querySelectorAll(".menuLink")
+menuLinks.forEach( 
+  function(menuLink) { 
+    menuLink.addEventListener("click", toggleHamburger) 
+  }
+)
+    
+    
+    </script>
+    <script href="js/background.js"></script>
+    <script href="js/navbar.js"></script>
+</html>

@@ -1,0 +1,182 @@
+.container {
+    max-width: $website-width;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
+//buttons 
+
+%btn-shared {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    
+}
+
+
+.btn {
+  &-main {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $main-color;
+  }
+    &:hover {
+        color: aliceblue;
+    }
+
+  &-light {
+    @extend %btn-shared;
+    color: #333;
+    background-color: $light-color;
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    color: #f4f4f4;
+    background-color: $dark-color;
+  }
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: $main-color;
+    color: $light-color;
+}
+
+
+//backgrounds 
+
+.bg {
+    &-main {
+        background: $main-color;
+        color: set-text-color($main-color);
+    }
+    &-dark {
+        background: $dark-color;
+        color: set-text-color($dark-color);
+    }
+    &-light {
+        background: $light-color;
+        color: set-text-color($light-color);
+    }
+    &-medium {
+        background: $medium-color;
+        color: set-text-color($medium-color);
+    }
+}
+
+//color change
+.x:hover {
+  color: $main-color;
+  cursor:default;
+}
+
+
+.lead {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0.8rem;
+    text-align: center;
+    .text-contact {
+        color: $medium-color;
+        
+        
+    }
+    
+}
+
+//hi
+ .hi {
+    color: $main-color;
+    cursor:default; 
+            }
+
+.text-center {
+    text-align: center;
+}
+
+
+//padding
+
+.py {
+    &-1 {
+        padding: 1rem 0;
+    }
+    &-2 {
+        padding: 2rem 0;
+    }
+    &-3 {
+        padding: 3rem 0;
+    }
+    &-4 {
+        padding: 4rem 0;
+    }
+    
+    
+}
+
+
+//margin
+
+.my {
+    &-1 {
+        margin: 1rem 0;
+    }
+    &-2 {
+        margin: 2rem 0;
+    }
+    &-3 {
+        margin: 3rem 0;
+    }
+    &-4 {
+        margin: 4rem 0;
+    }   
+}
+
+
+.section-title {
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem;
+    color: $main-color;
+}
+
+.section-title1{
+    font-size: 1.2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem;
+    color: $main-color;
+}
+
+
+.bottom-line {
+  height: 2px;
+  width: 5rem;
+  background: $main-color;
+  display: block;
+  margin: 1rem auto 1rem auto;
+}
+
+.bio-image {
+    height: 150px;
+    width: 150px;
+}
+
+
+
+//header content 

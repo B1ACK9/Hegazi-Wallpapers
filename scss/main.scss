@@ -1,0 +1,339 @@
+@import 'config';
+@import 'utilties';
+
+//gerneral 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'lato' , sans-serif;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: $dark-color;  
+}
+
+
+ul{
+    list-style: none;
+}
+
+h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+
+// logo editiable 
+
+#logo {
+    width: 150px;
+    height: 150px;
+    margin-top: -1rem;
+    
+}
+
+
+// main-nav 
+
+#main-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    
+    
+    ul {
+        display: flex;
+    }
+    
+    li {
+        padding: 1.5rem 1.5rem;
+        margin-top: 1.8rem;
+    }
+      a {
+        
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: $main-color;
+  overflow: hidden;
+  background: linear-gradient(to left, $main-color, $main-color 50%, $light-color 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease-in;
+  text-decoration: none; // text decorations are clipped in WebKit browsers
+        
+        &:hover {
+        background-position: 0 100%;
+  }
+          
+}
+}
+
+
+
+// header 
+
+#header {
+    &-home {
+        background: $bg-img no-repeat center right/cover;
+        height: 100vh;
+        color: aliceblue;
+        
+        .header-content {
+            text-align: center;
+            padding: 15%;
+            
+            
+            
+            h1 {
+                font-size: 4rem;
+                line-height: 1.2;
+                
+            }
+        }
+        }
+        &-inner {
+            background: $bg-img5 no-repeat 20% 30% /cover;
+        height: 5.5rem; 
+        border-bottom: 3px solid $main-color; 
+        }
+    &-third {
+        color: aliceblue;
+       background: $bg-img4 no-repeat 20% 30% /cover;
+        height: 5.5rem; 
+        border-bottom: 3px solid $main-color; 
+        
+        a {
+            position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: $main-color;
+  overflow: hidden;
+  background: linear-gradient(to left, $medium-color, $medium-color 50%, $light-color 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease-in;
+  text-decoration: none; // text decorations are clipped in WebKit browsers
+        
+        &:hover {
+        background-position: 0 100%;
+  }
+        }
+    }
+    }
+   
+
+ 
+
+// why choose our app
+
+#why-we-are {
+     background-color: $light-color;
+    padding: 2rem;
+    
+.specials {
+      text-align: center;
+      margin-top: 3rem;
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+      
+    .fas {
+        color: $icon-color;
+        padding-bottom: 0.4rem;
+    }
+
+    }
+}
+
+
+//stats 
+
+#downloads .stats {
+    display: grid;
+            grid-template-columns: repeat(4, 1fr);
+    margin: 1.2rem;
+            
+}
+
+
+
+
+
+
+//download 
+
+
+.download-btn {
+    text-align: center;
+}
+    
+    
+    
+
+    
+    
+//footer 
+footer{
+    background-color: $dark-color;
+    padding: 40px;
+    margin-top: 1.5rem; 
+    border:none;
+    
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.social-links{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color:$light-color;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;  
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 120%;
+}
+ 
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: $medium-color;
+}
+.social-links li a:hover,
+.social-links li a:active{
+    color: $medium-color;
+}
+footer p{
+    color: #959595;
+    text-align: center;
+    font-size: 90%;
+    margin-top:30px;
+}
+ 
+
+
+//first page done 
+
+#about {
+    
+    &-a {
+        
+        .bio {
+          border-bottom: 1px solid $main-color;
+          padding: 0.8rem;
+          text-align: center;  
+        }
+    }
+}
+
+
+// contact us 
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+}
+input[type=text], 
+input[type=email], 
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    margin: 0.5rem;
+    border-radius: 20px;
+    border:1px soild #c6c6c6;
+    
+}
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+
+//privacy policy 
+
+#privacy-policy {
+    .privacy{
+        line-height: 1.6;
+        font-size: 1rem;
+        padding: 2rem;
+        
+        .privacy-list {
+            line-height: 1.8;
+            list-style: disc;
+        }
+    } 
+}
+
+
+
+//btn 
+
+
+.ham {
+  display: none;
+  position: absolute;
+  /* always keep ham on top of everything */
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+  background-size: 100%;
+}
+
+

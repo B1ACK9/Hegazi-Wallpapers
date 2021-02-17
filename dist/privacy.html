@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title> Privacy Policy </title>
+    </head>
+    <body>
+   
+<!--        header -->
+        <header id="header-third">
+        <div class="container">
+            <button class="ham btn-no-show"></button> 
+            <nav id="main-nav" class="navbar">
+            <img id="logo" src="img/logo-bright.png">
+                <ul>
+                <li><a class="menuLink" href="index.html">Home</a></li>
+                <li><a class="menuLink" href="index.html">Download</a></li>
+                <li><a  class="menuLink"href="about.html">Contact Us</a></li>
+                <li><a class="menuLink" href="privacy.html">Privacy</a></li>
+                </ul>
+            </nav>
+        </div>
+      </header>
+        
+<!--        section why we are different -->
+        
+        <section classs="text-center py-3" id="privacy-policy">
+        <div class="container">
+            <h2 class="section-title" >Privacy Policy</h2>
+            <div class="bottom-line"></div>
+            <p class="lead"></p>
+            <div class="about-info">
+            <div class="privacy bg-light">
+                <h3 >This privacy policy includes all the details about the data collected in Hegazi Wallpaper and how it’s used.</h3>
+                <p class="lead">As a user we also do not like to give personal informations and we don’t want to see our informations collected without knowing what will going to happen to those datas. Hegazi Wallpaper has been alive with the support and trust of it’s users. We want to keep the trust; you can find all the details about the data usage below.</p>
+                <ul> 
+                    <li class="privacy-list">Hegazi Wallpaper does collect anonymous usage data. This data does not include your original device identification numbers, your real personality or your personal data if it’s not directly given by you in an open form.</li>
+                    <li class="privacy-list">Hegazi Wallpaper can not access to your real information and your purchases or any other action may not be restored without associating purchases with some information. This is why it is recommended to fill the registration form in the application. That form contains personal information which helps us contact the user easily, help quickly and solve possible licensing problems.</li>
+                    <li class="privacy-list">Usage / interactions in the application are used to determine what stations is being listed at most and which functions attracts the most attention so we can improve those sections. This information also allows us to be able to serve better features like listing most popular stations according to a specific region.</li>
+                    <li class="privacy-list">These datas may be used to serve additional services to 3rd parties like station statistics. NONE of these services will include sensitive information/personally identifying data if not permitted by you.</li>
+                    <li class="privacy-list">In some cases Hegazi Wallpaper may communicate directly with a 3rd party server to obtain latest data for display within the app (such as rss feeds, artist/song images and informations) . When this happens – we don’t transmit any data about you or your usage to these 3rd parties except where explicitly stated. Please check these 3rd parties (where applicable) for their additional privacy policies.</li>                    
+                </ul>
+                
+                <h5 class="section-title1">Advertising Banner Privacy Policy</h5>
+                <ul>
+                <li class="privacy-list">Hegazi Wallpaper may display advertisements on various places in the application. This system may use and transmit basic regional/language information about you to the advertising banner system in order to provide you with relevant ads. In some cases, we may have agreements with sponsors and we may hide advertisements in that situation. Eventhough the advertisement may get hidden in that situation, we may provide similar informations to sponsors or 3rd parties.</li>
+                 </ul>   
+                <h5 class="section-title1">3rd Party Content Privacy Policy</h5>
+                
+                <ul>
+                <li class="privacy-list">Hegazi Wallpaper may display live web pages or images from 3rd party sources and in these cases you should read the privacy policies displayed by these websites. We use Google Image Search for some of the images related to now playing info.</li>
+                
+                
+                </ul>
+                
+                
+                
+                
+                </div>
+            </div>
+            </div>
+            </section>
+            
+        
+        
+<!--        contact us -->
+            
+        
+     
+            <!--        footer -->
+            
+            <footer>
+        <div class="container">
+            <div class="row">
+            <ul class="footer-nav">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="#">IOS APP</a></li>
+                <li><a href="#">ANDROID APP</a></li>
+                </ul>
+            </div>
+            <div class="row">
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f fa-2"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter fa-2"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-2"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin fa-2"></i></a></li>
+                </ul>
+            </div>
+            </div>
+        <div class="row">
+            <p>
+            Copyright &copy; 2020 By BLKTK. All Rights Reserved.
+            </p>
+            </div>
+        </footer>
+        
+        <script>
+    var navbar = document.querySelector(".navbar")
+var ham = document.querySelector(".ham")
+
+// toggles hamburger menu in and out when clicking on the hamburger
+function toggleHamburger(){
+  navbar.classList.toggle("showNav")
+  ham.classList.toggle("showClose")
+}
+
+ham.addEventListener("click", toggleHamburger)
+
+// toggle when clicking on links
+
+// METHOD 1
+var menuLinks = document.querySelectorAll(".menuLink")
+menuLinks.forEach( 
+  function(menuLink) { 
+    menuLink.addEventListener("click", toggleHamburger) 
+  }
+)
+    
+    
+    </script>
+    </body>
+</html>
